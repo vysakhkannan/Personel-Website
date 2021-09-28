@@ -688,7 +688,7 @@ Hopefully he will also serve inspiration for those upcoming generation.
             <form action="https://script.google.com/macros/s/AKfycbxNbhZW0Cse2l3tm7vaf1vqQ2Mh1c1Vs0XuIgRiTdsl1Dyr-5ygz_lOXAy4S0zsO-Le/exec"  id="gform" class="form" method="POST" >
               <div class="row" style="margin: 20px;">
                 <div class=" form-details ">
-                  <input type="text" name="name" class="form-control" id="names" placeholder="Your Name" >
+                  <input type="text" name="name" maxlength="18" class="form-control" id="names" placeholder="Your Name" >
 
                   <p id="name-error">The name field can't be empty</p>
                   <i id ="name-correct"class="fas fa-check-circle"></i>
@@ -700,7 +700,7 @@ Hopefully he will also serve inspiration for those upcoming generation.
               </div>
               <div class="row" style="margin: 20px;">
                 <div class=" form-details ">
-                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" >
+                  <input type="email" class="form-control" maxlength="30" name="email" id="email" placeholder="Your Email" >
 
                   <p id="email-error">Please use valid eg: email@abcd.com </p>
 
@@ -708,7 +708,7 @@ Hopefully he will also serve inspiration for those upcoming generation.
               </div>
               <div class="row" style="margin: 20px;"> 
                 <div class=" form-details">
-                  <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" >
+                  <input type="text" class="form-control" maxlength="30" name="subject" id="subject" placeholder="Subject" >
 
                   <p id="subject-error">This field can't be empty</p>
 
@@ -716,7 +716,7 @@ Hopefully he will also serve inspiration for those upcoming generation.
               </div>
               <div class="row" style="margin: 20px;">
                 <div class=" mt-2 form-details" >
-                  <textarea class="form-control" name="message" id="message"  rows="5" placeholder="Message"></textarea>
+                  <textarea class="form-control" name="message" maxlength="30" id="message"  rows="5" placeholder="Message"></textarea>
 
                   <p id="message-error">This field can't be empty</p>
 

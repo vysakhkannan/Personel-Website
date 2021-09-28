@@ -143,9 +143,18 @@ nameForm.addEventListener("keyup", e=>{
     let nameValue=e.target.value;
     let nameError=document.querySelector('#name-error')
 
+
+    let nameRgx=/[0-9]/g;
+
+    nameValue=nameValue.replace(nameRgx, e=>{
+        return e='';
+    })
+
+    e.target.value=nameValue;
+
     if(nameValue==''){
         haveName=false;
-        nameError.style.display="block"
+        nameError.style.display="none"
     }else{
         haveName=true;
         nameError.style.display="none"
