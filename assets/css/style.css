@@ -1049,7 +1049,7 @@ section {
   font-size: 13px;
 }
 
-/* form error  */
+/* form error 
 
 
 .form-details{
@@ -1119,7 +1119,60 @@ section {
   visibility: visible;
   color: red;
 }
-
+ */
 
 
 /* form error ends */
+
+#email-error{
+  color:red;
+  font-size: 12px;
+  height: 0;
+  display: none;
+}
+#name-error{
+  color:red;
+  font-size: 12px;
+  height: 0;
+  display: none;
+}
+#subject-error{
+  color:red;
+  font-size: 12px;
+  height: 0;
+  display: none;
+}
+#message-error{
+  color:red;
+  font-size: 12px;
+  height: 0;
+  display: none;
+}
+
+#name-correct{
+  color: green;
+  font-size: 12px;
+  height: 0;
+  display: none;
+}
+
+#email-correct{
+  color: green;
+  font-size: 12px;
+  height: 0;
+  display: none;
+}
+
+#subject-correct{
+  color: green;
+  font-size: 12px;
+  height: 0;
+  display: none;
+}
+
+#message-correct{
+  color: green;
+  font-size: 12px;
+  height: 0;
+  display: none;
+}
