@@ -139,6 +139,24 @@ let haveEmail=false;
 let haveSubject=false;
 let haveMessage=false;
 
+
+
+form.addEventListener("submit", (e)=>{
+    e.preventDefault();
+    $.ajax({
+        url:"https://script.google.com/macros/s/AKfycbxNbhZW0Cse2l3tm7vaf1vqQ2Mh1c1Vs0XuIgRiTdsl1Dyr-5ygz_lOXAy4S0zsO-Le/exec",
+        data:$("#gform").serialize(),
+        method:"post",
+        success:function(){
+            alert("form submited succesfully");
+            location.reload();
+        },
+        error:function(){
+            alert("Something went wrong!!");
+        }
+    })
+})
+
 nameForm.addEventListener("keyup", e=>{
     let nameValue=e.target.value;
     let nameError=document.querySelector('#name-error')
